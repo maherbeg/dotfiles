@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo $1
+aws glacier upload-archive --vault-name maherbeg-video --account-id -  --body $1 --archive-description $1
+
+osascript -e 'display notification "Finished upload of $1" with title "Glacier Upload finished!"'
+

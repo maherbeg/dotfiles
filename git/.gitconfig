@@ -1,0 +1,25 @@
+[user]
+	name = Maher Beg
+	email = maherbeg@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	interactive = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[merge]
+	tool = diffmerge
+[core]
+	quotepath = false
+	excludesfile = ~/.gitignore
+[github]
+	user = maherbeg
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain

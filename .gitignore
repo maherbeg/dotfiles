@@ -1,0 +1,14 @@
+# mac os specific
+.CFUserTextEncoding
+.DS_Store
+
+# general
+.aws/**/*
+
+# fish
+fish_history
+fish/.config/fish/completions/rustup.fish
+fish/.config/fish/fishd.*
+
+# vim
+.netrwhist

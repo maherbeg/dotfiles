@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Runs the mkvdts script in a docker container
+
+docker build -t mkvdts .
+
+docker run --rm -ti \
+	mkvdts \
+	--mount source=.,destination=/app \
+	"$@"
