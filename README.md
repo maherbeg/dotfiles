@@ -21,3 +21,4 @@ Personal and portable dotfiles setup. Run `./setup.sh` to run things. This is id
 * [Fantastic set of ideas using stow as well as making things cross package](https://github.com/Kraymer/F-dotfiles)
 * [Docker containers on the desktop](https://blog.jessfraz.com/post/docker-containers-on-the-desktop/)
 * [Docker containers for command line apps](https://blog.ouseful.info/2016/05/03/using-docker-as-a-personal-productvity-tool-running-command-line-apps/)
+* [MacOS Default preferences](https://github.com/mihaliak/dotfiles/blob/master/macos/defaults.sh)
