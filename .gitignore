@@ -10,5 +10,8 @@ fish_history
 fish/.config/fish/completions/rustup.fish
 fish/.config/fish/fishd.*
 
+# git
+.gitconfig.local
+
 # vim
 .netrwhist
