@@ -16,6 +16,14 @@ else
 	exit 1
 fi
 
+if ! grep --quiet "$(command -v fish)" /etc/shells ; then
+  echo "Installing fish into /etc/shells"
+  command -v fish | sudo tee -a /etc/shells 
+fi
+
+echo "Changing shell to fish"
+sudo usermod -s "$(command -v fish)" "${USER}"
+
 echo "Installing stow configuration <whoaa>"
 stow stow
 echo "Stow configuration installed!"
