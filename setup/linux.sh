@@ -23,6 +23,14 @@ sudo apt-get install fish git gnupg vim
 
 # TODO install ripgrep fd hyper node flow
 
+if ! [-x "$(command -v node)" ]; then
+    echo ">> Node isn't installed, attempting to install!"
+    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+    # TODO maybe install buildtools
+    echo ">> Node installed!"
+fi
+
 if ! [ -x "$(command -v code)" ]; then
   echo ">> Visual Studio Code isn't installed, attempting to install!"
   curl -L "https://go.microsoft.com/fwlink/?LinkID=760868" > /tmp/vscode.deb
