@@ -45,12 +45,12 @@ stow vim
 echo "Vim configuration installed!"
 
 echo "Installing Rust Lang"
-if [[ -x "$(command -v rustc)" ]]; then
+if ! [[ -x "$(command -v rustc)" ]]; then
 	curl https://sh.rustup.rs -sSf | sh -s -- -y
 fi
 
-rustup update
-rustup completions
+$(command -v fish) -c "~/.cargo/bin/rustup update"
+$(command -v fish) -c "~/.cargo/bin/rustup completions fish"
 echo "Rust installed!"
 
 echo "Installing Global NPM Tools"
