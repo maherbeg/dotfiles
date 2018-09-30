@@ -7,6 +7,7 @@ shopt -s nullglob
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	echo "Run Linux instructions"
+	./setup/linux.sh
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	echo "Run MacOS install setup"
 	./setup/macos.sh
