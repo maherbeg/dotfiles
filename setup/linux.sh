@@ -22,3 +22,11 @@ fi
 sudo apt-get install fish git gnupg vim 
 
 # TODO install ripgrep fd hyper node flow
+
+if ! [ -x "$(command -v code)" ]; then
+  echo ">> Visual Studio Code isn't installed, attempting to install!"
+  curl -L "https://go.microsoft.com/fwlink/?LinkID=760868" > /tmp/vscode.deb
+  sudo apt install /tmp/vscode.deb
+  rm /tmp/vscode.deb
+  echo ">>Visual Studio Code installed!"
+fi
