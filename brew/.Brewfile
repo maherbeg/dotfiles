@@ -23,9 +23,12 @@ brew "stow"
 brew "vim"
 # JavaScript package manager
 brew "yarn"
-# Hyper Terminal
-cask "hyper"
 # Docker
 cask "docker"
 # iterm2
 cask "iterm2"
+
+brew "starship"
+brew "nvim"
+brew "fd"
+brew "fzf"

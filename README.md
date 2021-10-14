@@ -5,16 +5,17 @@ Personal and portable dotfiles setup. Run `./setup.sh` to run things. This is id
 * Add a `.gitconfig.local` file to have machine specific customizations, or environment specific customizations.
 
 # TODO
-* [ ] Darktable
+* [ ] Checkout [nix home-manager](https://github.com/nix-community/home-manager) to manage dotfiles instead
 * [ ] Write check script to make sure everything is synced up: Check atom dependencies, brew dependencies, apt dependencies
 * [ ] Get work related git config
 * [ ] GNUPG config?
 * [ ] Ensure fish is setup as the default shell
 * [ ] Enable gitconfig.local file with setup instructions
+* [ ] Test out kitty + custom kitty profile
 
-## Atom Setup Portability
-* [ ] Stow the atom Setup
-* [ ] `apm` install the packages from a list
+## VSCode Setup Portability
+* [ ] Stow the vscode Setup
+* [ ] `code` install the packages from a list
 * [ ] Script to output apm list
 
 # References and Thanks
